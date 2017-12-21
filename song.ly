@@ -20,19 +20,19 @@ global = {
 
 % Die Noten können als Variablen abgespeichert werden, damit man im sogenannten "score" Block auf sie zurückgreifen kann.
 % Somit können komplexere Dokumente gut strukturiert werden.
-SopranNoten = \relative c'' {
+SopranNoten = \relative c' {
                 \repeat volta 2 { \partial 2 g2 g4 fis g a bes2 bes4 d c bes bes a bes2 } \break
                 bes2 \repeat volta 2 { a4 a g g fis2 d e8( f) g4 g fis }
                 \alternative { { g2 bes } { g } } \bar "|."
 }
-AltNoten = \relative c' {
+AltNoten = \relative c''' {
                 \repeat volta 2 { \partial 2 d2 d4 d d f f2 f4 f e f g f f2 }
                 f2 \repeat volta 2 { f4 f d es d2 f c4 d d d }
                 \alternative { { b2 d } { d } }
 }
 TenorNoten = \relative c' {
                 \repeat volta 2{ \partial 2 bes2 bes4 a bes c d2 d4 bes g d' c c d2 }
-                d \repeat volta 2 {c4 d bes c a2 bes g4 bes a a}
+                d \repeat volta 2 {c4 e bes c a2 bes g4 bes a a}
                 \alternative { { g2 bes } { g } }
 }
 BassNoten = \relative c' {
